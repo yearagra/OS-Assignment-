@@ -1,0 +1,7 @@
+make:
+	nasm -m amd64 -f elf Assignment1_SP22004.asm
+	ld -s -o Assignment1_SP22004 Assignment1_SP22004.o
+run:
+	./Assignment1_SP22004
+clean:
+	rm -f *.o Assignment1_SP22004
